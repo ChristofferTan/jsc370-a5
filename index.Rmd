@@ -1,0 +1,11 @@
+---
+title: "Bike Share and Weather"
+author: "Christoffer Tan"
+output: html_document
+---
+
+## Welcome
+
+This website presents my JSC370 final project analyzing the impact of weather on bikeshare usage in Toronto.
+
+Explore the interactive visualizations on the **Interactive Visuals** page to see how different factors influence bike trip volumes.

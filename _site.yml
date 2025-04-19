@@ -1,0 +1,12 @@
+name: "bike-weather"
+output_dir: "."
+navbar:
+  title: "Bike Share & Weather"
+  left:
+    - text: "Home"
+      href: index.html
+output:
+  html_document:
+    theme: cosmo
+    toc: true
+    toc_float: true
