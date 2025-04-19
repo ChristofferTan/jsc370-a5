@@ -4,8 +4,7 @@ author: "Christoffer Tan"
 output: html_document
 ---
 
-## Welcome
+## Introduction
+This website showcases interactive visualizations created for Assignment 5 of the JSC370 course, using data from my final project. The analysis investigates how weather conditions and hourly patterns influence Bike Share usage in Toronto, drawing from datasets provided by the [OpenWeather API](https://openweathermap.org/api) and [Bike Share Toronto Open Data Portal](https://open.toronto.ca/dataset/bike-share-toronto-ridership-data/).
 
-This website presents my JSC370 final project analyzing the impact of weather on bikeshare usage in Toronto.
-
-Explore the interactive visualizations on the **Interactive Visuals** page to see how different factors influence bike trip volumes.
+Navigate to the [Interactive Visuals](visuals.html) page to explore these dynamic visualizations and uncover insights into bike trip behaviors and predictive modeling results.
