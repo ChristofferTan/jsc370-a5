@@ -85,8 +85,8 @@ p2 <- plot_ly(
   orientation = "h",
   text = ~Label,
   textposition = "inside",
-  insidetextanchor = "start",  # move text slightly inside
-  textfont = list(color = "black", size = 12),
+  insidetextanchor = "start",
+  textfont = list(size = 10, color = "black"),  # 👈 Smaller font for value inside bar
   marker = list(
     color = ~Importance,
     colorscale = list(
@@ -100,28 +100,8 @@ p2 <- plot_ly(
     "Importance: %{x:.1f}%<extra></extra>"
   ),
   height = 500
-) |>
-  layout(
-    title = list(
-      text = paste0("Feature Importance for Random Forest Model (Best Performing Model)<br>",
-                    "<sup>mtry = ", 4,
-                    ", ntree = ", 500,
-                    ", nodesize = ", 10, "</sup>"),
-      x = 0.5,
-      font = list(size = 18)
-    ),
-    xaxis = list(title = "Importance (%IncMSE)", titlefont = list(size = 14)),
-    yaxis = list(
-      title = "",
-      tickfont = list(size = 14),
-      tickpadding = 20,  # Add space between y-axis and y labels
-      automargin = TRUE  # Ensures enough margin is added if needed
-    ),
-    margin = list(l = 180, r = 40, t = 100, b = 50),
-    showlegend = FALSE,
-    paper_bgcolor = "#ffffff",
-    plot_bgcolor = "#ffffff"
-  )
+)
+
 
 pred_vs_actual <- tibble(
   actual = rf_test$total_trips,
